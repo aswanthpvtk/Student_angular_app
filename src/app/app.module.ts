@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { StudentViewComponent } from './student-view/student-view.component';
 
 
 const myRoute:Routes=[
+  
   {
     path:"",
     component:StudentEntryComponent
+  },
+  {
+    path:"view",
+    component:StudentViewComponent
   },
 ]
 @NgModule({
   declarations: [
     AppComponent,
     StudentEntryComponent,
-    NavbarComponent
+    NavbarComponent,
+    StudentViewComponent
   ],
   imports: [
     BrowserModule,
