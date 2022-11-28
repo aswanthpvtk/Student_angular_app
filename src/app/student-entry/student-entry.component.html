@@ -7,52 +7,52 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
                     <label for="" class="form-label">Name:</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Rollno:</label>
-                    <input type="text" class="form-control">
+                    <input name="rno" [(ngModel)]="rno" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Addmision no:</label>
-                    <input type="text" class="form-control">
+                    <input name="adno" [(ngModel)]="adno" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Mobile number:</label>
-                    <input type="text" class="form-control">
+                    <input name="mno" [(ngModel)]="mno" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">College name:</label>
-                    <input type="text" class="form-control">
+                    <input name="cname" [(ngModel)]="cname" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent name:</label>
-                    <input type="text" class="form-control">
+                    <input name="pname" [(ngModel)]="pname" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent mobile no:</label>
-                    <input type="text" class="form-control">
+                    <input name="pmno" [(ngModel)]="pmno" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Username:</label>
-                    <input type="text" class="form-control">
+                    <input name="uname" [(ngModel)]="uname" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password:</label>
-                    <input type="text" class="form-control">
+                    <input name="psw" [(ngModel)]="psw" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
-                    <button class="btn btn-success">Register</button>
+                    <button (click)="readValues()" class="btn btn-success">Register</button>
                 </div>
             </div>
 
